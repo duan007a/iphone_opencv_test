@@ -6,6 +6,7 @@
 @synthesize viewController;
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
+    window.rootViewController = viewController;
     [window addSubview:viewController.view];
     [window makeKeyAndVisible];
 }
